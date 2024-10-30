@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light background */
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background: #333; /* Dark background for the header */
+  color: #fff; /* White text color */
+  padding: 10px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 50px; /* Adjust logo size */
+  margin-right: 10px; /* Space between logo and title */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex; /* Keep links in a row */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px; /* Space between links */
+}
+
+.nav-links a {
+  color: #fff; /* White text */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 15px; /* Add padding */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Background on hover */
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+  background: #fff; /* White background for main content */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2, h3 {
+  color: #333; /* Darker text for headings */
+}
+
+/* Button Styles */
+button {
+  background: #5cb85c; /* Green background for buttons */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+button a {
+  color: white; /* Ensure button text is white */
+  text-decoration: none; /* Remove underline */
+}
+
+button:hover {
+  background: #4cae4c; /* Darker green on hover */
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #333; /* Same as header */
+  color: #fff;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer; /* Ensures it's clickable */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide links by default */
+    flex-direction: column; /* Stack links vertically */
+    background-color: #333; /* Background for mobile menu */
+    position: absolute; /* Position menu */
+    top: 60px; /* Below the header */
+    left: 0;
+    width: 100%; /* Full width */
+  }
+
+  .nav-links.active {
+    display: flex; /* Show links when active */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon on small screens */
+  }
+}
