@@ -3,7 +3,7 @@ document.getElementById('special-button').addEventListener('click', function() {
 });
 
 document.getElementById('confirm-button').addEventListener('click', function() {
-  window.location.href = 'https://drive.google.com/uc?export=download&id=1W_Yy4iX79WeC6wbumYkFqdTYKBJnvFWG'; /* Replace with your desired URL */
+  window.location.href = 'https://drive.google.com/uc?export=download&id=1oHezJyWNLKeQEiffxE0nCtivpCdoLIpj'; /* Replace with your desired URL */
 });
 
 document.getElementById('cancel-button').addEventListener('click', function() {
