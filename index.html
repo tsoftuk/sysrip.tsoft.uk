@@ -1,1 +1,66 @@
-Test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SysRIP by TSoft</title>
+  <link rel="icon" href="tfav.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="sript.png" alt="SysRIP Logo" class="logo-img">
+        <h1>SysRIP by TSoft</h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://tsoft.uk">TSoft</a></li>
+        </ul>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="overview">
+      <h2>Welcome to SysRIP</h2>
+      <p>SysRIP is a powerful Windows Batch File designed to perform various tasks while pushing the limits of batch file capabilities.</p>
+      <button><a href="download.html">Download Now</a></button>
+    </section>
+
+    <section id="features">
+      <h3>Features</h3>
+      <ul>
+        <li>Online features like a news section</li>
+        <li>Open-source for user safety (code is fully readable)</li>
+        <li>User-friendly interface for easy access.</li>
+        <li>Compatible with all Windows versions.</li>
+        <li>Lightweight and fast execution.</li>
+      </ul>
+    </section>
+
+    <section id="support">
+      <h3>Support</h3>
+      <p>If you have any questions or need assistance, please visit our <a href="https://tsoft.uk/contact.html">contact page</a>.</p>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 TSoft. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu Toggle -->
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
